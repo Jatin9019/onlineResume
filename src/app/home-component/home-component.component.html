@@ -1,0 +1,30 @@
+<div class="center">
+  <img src="assets/IMG/mypic.png" id="icon" alt="User Icon" />
+</div>
+<div class="center">
+    <label class="h1">Name :Jatin Chopra</label>
+</div>
+
+<div class="center">
+  <button type="button"(click)="showAddress()" class="btn btn-primary center" data-toggle="button" aria-pressed="false" autocomplete="off">
+    Show address
+  </button>
+  <button type="button"(click)="hideAddress()" class="btn btn-primary center" data-toggle="button" aria-pressed="false" autocomplete="off">
+      Hide address
+  </button>
+  <div>
+    <label *ngIf="showaddress" class="h1">Address : House No 90 Sector 19 Faridabad</label>
+  </div>  
+</div>
+<div class="center">
+    <div class="center">
+        <button type="button"(click)="about()" class="btn btn-primary center" data-toggle="button" aria-pressed="false" autocomplete="off">
+            About me
+        </button>
+        <label class="h3" *ngIf="aboutme">
+            I started programming with java  in 2014 in school where i learned OOPS concept and mysql . Then I jumped to HTML5 and CSS3 for Web Development and now I am working with Node.js , Angular and MongoDB database.      
+            Apart from web development, I like IOT & play with Arduino, ESP8266/NodeMCU.
+        </label>
+      </div>
+</div>
+
